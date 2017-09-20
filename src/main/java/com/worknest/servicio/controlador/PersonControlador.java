@@ -35,8 +35,11 @@ public class PersonControlador {
 	public String agregaUnaPersona(@RequestBody Persona persona) {
 		//Método de agregar a la base de datos con procedimiento almacenado
 		repositorioPersona.personaProcedimiento(persona.getNombre(), persona.getApellido());
-		//Método de almacenar usando los métodos d la interface
+		
+		/*Método de almacenar usando los métodos de la interface*/
 		//repositorioPersona.save(persona);
+		
+		
 		return "Se agrego la persona";
 	}
 	
